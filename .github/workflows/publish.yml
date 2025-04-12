@@ -13,11 +13,14 @@ jobs:
     - name: Checkout repo
       uses: actions/checkout@v3
 
-    - name: Use Node.js
+    - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
         node-version: '19'
         registry-url: 'https://npm.pkg.github.com/'
+
+    - name: Configure .npmrc
+      run: echo "//npm.pkg.github.com/:_authToken=${NPM_TOKEN}" >> ~/.npmrc
 
     - name: Install dependencies
       run: npm install
