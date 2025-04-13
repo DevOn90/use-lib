@@ -1,4 +1,9 @@
 <lib-button 
     [label]="'Click Me'"
     ></lib-button>
+<div>
+    <input type="text" name="" id="input-name" placeholder="What is you name??">
+    <button (click)="getName()">Click</button>
+    <p>{{output}}</p>
+</div>
 <router-outlet></router-outlet>

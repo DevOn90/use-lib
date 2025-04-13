@@ -4,6 +4,9 @@
   "compileOnSave": false,
   "compilerOptions": {
     "paths": {
+      "Test": [
+        "./dist/test"
+      ],
       "button": [
         "./dist/button"
       ]
