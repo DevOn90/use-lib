@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - master
+    paths:
+      - 'projects/button/**'
 
 jobs:
   build-and-publish:
